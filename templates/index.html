@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness & Diet Planner</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Fitness & Diet Planner</h1>
+      <p>Your personalized fitness journey starts here!</p>
+    </header>
+
+    <main class="main-container">
+      <!-- Input Form Section -->
+      <section id="input-column">
+        <div id="user-info" class="card">
+          <h2>Get Started</h2>
+          <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required />
+
+            <label for="weight">Weight (kg):</label>
+            <input
+              type="number"
+              id="weight"
+              name="weight"
+              step="0.1"
+              required
+            />
+
+            <label for="height">Height (cm):</label>
+            <input
+              type="number"
+              id="height"
+              name="height"
+              step="0.1"
+              required
+            />
+
+            <label for="activity-level">Activity Level:</label>
+            <select id="activity-level" name="activity-level">
+              <option value="sedentary">Sedentary</option>
+              <option value="lightly active">Lightly Active</option>
+              <option value="moderately active">Moderately Active</option>
+              <option value="very active">Very Active</option>
+            </select>
+
+            <label for="fitness-goal">Fitness Goal:</label>
+            <select id="fitness-goal" name="fitness-goal">
+              <option value="weight loss">Weight Loss</option>
+              <option value="muscle gain">Muscle Gain</option>
+              <option value="maintenance">Maintenance</option>
+            </select>
+
+            <label for="dietary-preference">Dietary Preference:</label>
+            <select id="dietary-preference" name="dietary-preference">
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+              <option value="gluten-free">Gluten-Free</option>
+              <option value="no preference">No Preference</option>
+            </select>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Output Sections -->
+      <section id="output-column">
+        <div id="bmi" class="card">
+          <h2>BMI Calculator</h2>
+          <p>Your BMI will be calculated and displayed here.</p>
+          <div id="bmi-details"></div>
+        </div>
+
+        <div id="fitness-plan" class="card">
+          <h2>Fitness Plan</h2>
+          <p>
+            Based on your fitness goal and activity level, here's your plan:
+          </p>
+          <div id="fitness-details"></div>
+        </div>
+
+        <div id="diet-plan" class="card">
+          <h2>Diet Plan</h2>
+          <p>Calorie and macronutrient breakdown:</p>
+          <div id="diet-details"></div>
+        </div>
+
+        <div id="meal-plan" class="card">
+          <h2>Meal Plan</h2>
+          <p>Personalized meal suggestions:</p>
+          <div id="meal-details"></div>
+        </div>
+
+        <div id="water-intake" class="card">
+          <h2>Water Intake Tracker</h2>
+          <p>Your daily water intake requirement:</p>
+          <div id="water-details"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2024 Fitness & Diet Planner</p>
+    </footer>
+
+    <script src="../static/script.js"></script>
+  </body>
+</html>
